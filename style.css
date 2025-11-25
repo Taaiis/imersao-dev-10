@@ -1,0 +1,106 @@
+/* Estilos Gerais */
+body {
+    background-color: #277597; /* Define a cor de fundo do corpo da página */
+    color: #f0f0f0; /* Define a cor do texto para o corpo da página */
+    font-family: Arial, sans-serif; /* Define a família da fonte para o corpo do texto (sans-serif) */
+    margin: 0; /* Remove a margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    display: flex; /* Habilita o layout flexbox para o corpo */
+    flex-direction: column; /* Organiza os filhos do flexbox (header, main, footer) em uma coluna */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport (tela) */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a4a60; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Adiciona uma sombra sutil abaixo do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+
+header h1 {
+    margin: 0 0 15px 0; /* Define a margem do título (15px na parte inferior) */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte para títulos e cabeçalhos (serif) */
+}
+
+.search-container input[type="text"] {
+    padding: 10px; /* Adiciona preenchimento interno ao campo de texto */
+    border: 1px solid #ccc; /* Define uma borda sólida cinza claro */
+    border-radius: 4px; /* Arredonda as bordas do campo de texto */
+    width: 250px; /* Define a largura do campo de texto */
+}
+
+.search-container button {
+    padding: 10px 15px; /* Adiciona preenchimento interno ao botão */
+    background-color: #f0ad4e; /* Define a cor de fundo do botão */
+    color: #1a4a60; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 4px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" ao passar sobre o botão */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+}
+
+.search-container button:hover {
+    background-color: #ec971f; /* Escurece a cor de fundo do botão quando o mouse está sobre ele */
+}
+
+/* Conteúdo Principal */
+main {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante disponível */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels */
+}
+
+/* Estilos para os cards de filmes */
+.card {
+    background-color: #1a4a60; /* Define a cor de fundo do card */
+    border-radius: 8px; /* Arredonda as bordas do card */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels */
+    display: flex; /* Usa Flexbox para alinhar imagem e texto */
+    gap: 20px; /* Adiciona um espaço entre a imagem e o conteúdo */
+    align-items: flex-start; /* Alinha os itens no topo */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar os cards */
+}
+
+.card-image {
+    width: 200px; /* Define uma largura fixa para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 4px; /* Arredonda as bordas da imagem */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+.card-content {
+    flex: 1; /* Faz com que o conteúdo de texto ocupe o espaço restante */
+}
+
+/* Estilo para o título dos cards */
+.card h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte para títulos e cabeçalhos (serif) */
+    margin-top: 0; /* Remove a margem superior do título do card */
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a4a60; /* Define a cor de fundo do rodapé */
+    padding: 15px; /* Adiciona um preenchimento interno de 15 pixels */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+}
+
+footer ul {
+    list-style: none; /* Remove os marcadores (bolinhas) da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+footer ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin: 0 10px; /* Adiciona uma margem horizontal de 10 pixels entre os itens */
+}
+
+footer a {
+    color: #f0ad4e; /* Define a cor dos links no rodapé */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado quando o mouse está sobre o link */
+}
